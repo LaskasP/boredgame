@@ -1,6 +1,17 @@
 body {
-    background-color: bisque;
+    background-color: #ffe8d6;
 }
-#card {
-    background-color: blue;
+.card {
+    background-color: #a5a58d;
+    width: 100%;
+}
+.card-body {
+    background-color: #b7b7a4;
+}
+.list-group-item {
+    background-color: #b7b7a4;
+}
+.sticky-bar {
+    background-color: #ffe8d6;
+    height: 4rem;
 }

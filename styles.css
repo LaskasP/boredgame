@@ -1,6 +1,10 @@
 body {
     background-color: #ffe8d6;
 }
+#title {
+    font-family: 'STIX Two Text', serif;
+    font-weight: 400;
+}
 .card {
     background-color: #a5a58d;
     width: 100%;
@@ -19,7 +23,7 @@ body {
 .add-player-button {
    width: 70px;
    height: 70px;
-   background-color: rgb(30, 172, 30);
+   background-color: #5faa79;
    border-radius: 50%;
    box-shadow: 0 6px 10px 0 #666;
    

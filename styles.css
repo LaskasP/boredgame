@@ -5,6 +5,9 @@ body {
     font-family: 'STIX Two Text', serif;
     font-weight: 400;
 }
+.container-md {
+    min-width: 280px;
+}
 .card {
     background-color: #a5a58d;
     width: 100%;
@@ -40,5 +43,10 @@ body {
     transform: scale(1.05);
 }
 .col-player {
-    height:25rem;
+    min-height:360px;
+    min-width: 280px;
 }
+
+textarea {
+    resize: none;
+  }

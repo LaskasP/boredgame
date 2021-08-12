@@ -4,6 +4,7 @@ body {
 .card {
     background-color: #a5a58d;
     width: 100%;
+    box-shadow: 0 6px 10px 0 #666;
 }
 .card-body {
     background-color: #b7b7a4;
@@ -15,12 +16,25 @@ body {
     background-color: #ffe8d6;
     height: 4rem;
 }
-.feather {
-    width: 24px;
-    height: 24px;
-    stroke: currentColor;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    fill: none;
-  }
+.add-player-button {
+   width: 70px;
+   height: 70px;
+   background-color: rgb(30, 172, 30);
+   border-radius: 50%;
+   box-shadow: 0 6px 10px 0 #666;
+   
+   font-size: 50px;
+   color: white;
+   line-height: 62px;
+   text-align: center;
+   
+   
+  transition: all 0.1s ease-in-out;
+}
+.add-player-button:hover {
+    box-shadow: 0 6px 14px 0 #666;
+    transform: scale(1.05);
+}
+.col-player {
+    height:25rem;
+}

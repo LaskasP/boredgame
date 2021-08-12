@@ -29,7 +29,41 @@
             </div>
         </div>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 gy-xl-5">
-            <div class="col d-flex justify-content-center">
+            <div class="col d-flex justify-content-center col-player">
+                <div class="card border-secondary mb-3">
+                    <div class="card-header">
+                        <div class="row row-cols-2 align-items-center ">
+                            <div class="col-10">
+                                <h1 class="card-title text-start display-5 " contenteditable="true">Player</h1>
+                            </div>
+                            <div class="col-2"><button type="button" class="btn-close btn-danger"
+                                    aria-label="Close"></button></div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush" id="points">
+                            <li class="list-group-item">
+                                <h3>Points: 5</h3>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Notes</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="footer">
+                        <div class="btn-group btn-group-lg d-flex" role="group">
+                            <button type="button" class="btn btn-success">+1</button>
+                            <button type="button" class="btn btn-danger">-1</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center col-player">
                 <div class="card border-secondary mb-3">
                     <div class="card-header">
                         <div class="row row-cols-2 align-items-center">
@@ -48,7 +82,7 @@
                             <li class="list-group-item">
                                 <div class="form-group">
                                     <label for="exampleFormControlTextarea1">Notes</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
                                 </div>
                             </li>
                         </ul>
@@ -63,7 +97,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col d-flex justify-content-center">
+            <div class="col d-flex justify-content-center col-player">
                 <div class="card border-secondary mb-3">
                     <div class="card-header">
                         <div class="row row-cols-2 align-items-center">
@@ -82,7 +116,7 @@
                             <li class="list-group-item">
                                 <div class="form-group">
                                     <label for="exampleFormControlTextarea1">Notes</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
                                 </div>
                             </li>
                         </ul>
@@ -97,7 +131,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col d-flex justify-content-center">
+            <div class="col d-flex justify-content-center col-player">
                 <div class="card border-secondary mb-3">
                     <div class="card-header">
                         <div class="row row-cols-2 align-items-center">
@@ -116,7 +150,7 @@
                             <li class="list-group-item">
                                 <div class="form-group">
                                     <label for="exampleFormControlTextarea1">Notes</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
                                 </div>
                             </li>
                         </ul>
@@ -131,7 +165,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col d-flex justify-content-center">
+            <div class="col d-flex justify-content-center col-player">
                 <div class="card border-secondary mb-3">
                     <div class="card-header">
                         <div class="row row-cols-2 align-items-center">
@@ -150,7 +184,7 @@
                             <li class="list-group-item">
                                 <div class="form-group">
                                     <label for="exampleFormControlTextarea1">Notes</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
                                 </div>
                             </li>
                         </ul>
@@ -165,42 +199,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col d-flex justify-content-center">
-                <div class="card border-secondary mb-3">
-                    <div class="card-header">
-                        <div class="row row-cols-2 align-items-center">
-                            <div class="col-10">
-                                <h1 class="card-title text-start display-5 " contenteditable="true">Player</h1>
-                            </div>
-                            <div class="col-2"><button type="button" class="btn-close btn-danger"
-                                    aria-label="Close"></button></div>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <ul class="list-group list-group-flush" id="points">
-                            <li class="list-group-item">
-                                <h3>Points: 5</h3>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="form-group">
-                                    <label for="exampleFormControlTextarea1">Notes</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                </div>
-                            </li>
-                        </ul>
-
-                    </div>
-
-                    <div class="footer">
-                        <div class="btn-group btn-group-lg d-flex" role="group">
-                            <button type="button" class="btn btn-success">+1</button>
-                            <button type="button" class="btn btn-danger">-1</button>
-                            <img src="icons/user-plus.svg" alt="Bootstrap" width="32" height="32">
-                        </div>
-                    </div>
-                </div>
+            <div class="col d-flex justify-content-center align-items-center col-player">
+                <div type="button" class="add-player-button">+</div>
             </div>
-
         </div>
     </div>
 

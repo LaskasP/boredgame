@@ -50,3 +50,12 @@ body {
 textarea {
     resize: none;
   }
+
+.bolded {
+    font-family: 'STIX Two Text', serif;
+    font-weight: 500;
+}
+.bolded-points {
+    font-family: 'STIX Two Text', serif;
+    font-weight: 600;
+}

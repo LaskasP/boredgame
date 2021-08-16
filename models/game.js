@@ -1,12 +1,12 @@
-class game {
+class Game {
     constructor(name, players = 2) {
         this.name = name;
         this.players = players;
     }
-    get Name() {
+    get name() {
         return this.name;
     }
-    get NumberOfPlayers() {
+    get numberOfPlayers() {
         return this.players;
     }
 }

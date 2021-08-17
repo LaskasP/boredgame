@@ -6,7 +6,7 @@ let addPlayerButton = document.querySelector(".add-player-button")
 let list = document.querySelector("#list")
 
 const createPlayer = () => {
-        
+
 }
 
 
@@ -20,6 +20,7 @@ resetGameButton.addEventListener('click', () => {
     for (let i = 0; i < childrens.length; i++) {
         childrens[i].remove()
     }
+    resetTimer()
 })
 
 

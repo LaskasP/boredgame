@@ -2,7 +2,12 @@ const maxPlayers = 6;
 let activePlayers = 2;
 let resetGameButton = document.querySelector(".reset-game")
 let playerDeleteButton = document.querySelector(".player-delete-button")
-const list = document.querySelector("#list")
+let addPlayerButton = document.querySelector(".add-player-button")
+let list = document.querySelector("#list")
+
+const createPlayer = () => {
+        
+}
 
 
 playerDeleteButton.addEventListener('click', (ev) => {
@@ -16,6 +21,5 @@ resetGameButton.addEventListener('click', () => {
         childrens[i].remove()
     }
 })
-
 
 

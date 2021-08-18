@@ -53,30 +53,31 @@ const deletePlayer = (ev) => {
     }
 }
 
-const refreshPoints = (player) => {
-    document.querySelector(`#points-${player.getId()}`).innerText = `${player.getPoints()}`
+const refreshPoints = (target) => {
+    document.querySelector(`#points-${target.getId()}`).innerText = `${target.getPoints()}`
 }
 
 const addPoint = (ev) => {
     if (ev.target && ev.target.matches(".point-plus")) {
         let id = parseInt(ev.target.id.replace("plus-", ""))
-        player = players.find(player => player.getId() === id)
-        player.setPoints(player.getPoints() + 1)
-        refreshPoints(player)
+        target = players.find(target => target.getId() === id)
+        target.setPoints(target.getPoints() + 1)
+        refreshPoints(target)
     }
 }
 const minusPoint = (ev) => {
     if (ev.target && ev.target.matches(".point-minus")) {
         let id = parseInt(ev.target.id.replace("minus-", ""))
-        player = players.find(player => player.getId() === id)
-        player.setPoints(player.getPoints() - 1)
-        refreshPoints(player)
+        target = players.find(target => target.getId() === id)
+        target.setPoints(target.getPoints() - 1)
+        refreshPoints(target)
     }
 }
 list.addEventListener('click', (ev) => {
     addPlayer(ev)
     deletePlayer(ev)
     addPoint(ev)
+    minusPoint(ev)
 })
 
 resetGameButton.addEventListener('click', () => {

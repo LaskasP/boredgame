@@ -5,7 +5,6 @@ let activePlayersIds = [];
 let players = []
 let resetGameButton = document.querySelector(".reset-game")
 let playerDeleteButton = document.querySelector(".player-delete-button")
-let addPlayerButton = document.querySelector(".add-player-button")
 let list = document.querySelector("#list")
 let plusbutton = document.querySelector(".point-plus")
 let minusbutton = document.querySelector(".point-minus")
@@ -31,11 +30,26 @@ const createPlayer = () => {
     }
     newPlayer = new player(getNextId())
     players.push(newPlayer)
-    console.log(newPlayer.getId())
+    list.insertAdjacentHTML('afterbegin', newPlayer.getPlayerCardHTML())
+    
 }
-addPlayerButton.addEventListener('click', () => {
-    createPlayer()
+const addPlayer = (ev) => {
+    if (ev.target && ev.target.matches(".add-player-button")) {
+        createPlayer()
+    }
+}
+const deletePlayer = (ev) => {
+    if (ev.target && ev.target.matches(".player-delete-button")) {
+        let id = ev.target.id.replace("delete-button-", "")
+        document.querySelector(`#card-${id}`).remove()
+
+    }
+}
+list.addEventListener('click', (ev) => {
+    addPlayer(ev)
+    deletePlayer(ev)
 })
+
 plusbutton.addEventListener('click', (ev) => {
     //console.log(ev.target.closest(".points").innerText)
 })
@@ -45,7 +59,8 @@ minusbutton.addEventListener('click', (ev) => {
 })
 
 playerDeleteButton.addEventListener('click', (ev) => {
-    ev.target.closest(".col-player").remove()
+
+
 })
 
 

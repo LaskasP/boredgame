@@ -14,12 +14,10 @@ body {
     width: 100%;
     box-shadow: 0 6px 10px 0 #666;
 }
-.card-body {
+.card-body, .list-group-item{
     background-color: #b7b7a4;
 }
-.list-group-item {
-    background-color: #b7b7a4;
-}
+
 .sticky-bar {
     background-color: #ffe8d6;
     height: 4rem;

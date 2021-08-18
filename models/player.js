@@ -1,18 +1,29 @@
 class player {
-    constructor(id, name = 'Unknown', color = "default") {
-        this.name = name;
-        this.color = color;
+    constructor(id, name = 'Unknown', color = "default", points = 0) {
+        this.name = name
+        this.color = color
         this.id = id
+        this.points = points
     }
     getName() {
-        return this.name;
+        return this.name
+    }
+    setName(name) {
+        this.name = name
     }
     getColor() {
-        return this.color;
+        return this.color
     }
     getId() {
-        return this.id;
+        return this.id
     }
+    setPoints(points) {
+        this.points = points
+    }
+    getPoints() {
+        return this.points
+    }
+
     getPlayerCardHTML() {
         return `<div class="col d-flex justify-content-center col-player" id = "card-${this.id}">
         <div class="card border-secondary mb-3">
@@ -29,7 +40,7 @@ class player {
             <div class="card-body">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">
-                        <h3 class="bolded-points">Points: <span class="points" id = "points-${this.id}">0</span></h3>
+                        <h3 class="bolded-points">Points: <span class="points" id = "points-${this.id}">${this.points}</span></h3>
                     </li>
                     <li class="list-group-item">
                         <div class="form-group">
@@ -43,8 +54,8 @@ class player {
 
             <div class="footer">
                 <div class="btn-group btn-group-lg d-flex" role="group">
-                    <button type="button " class="btn btn-success button point-plus">+1</button>
-                    <button type="button " class="btn btn-danger point-minus">-1</button>
+                    <button type="button " class="btn btn-success button point-plus" id = "plus-${this.id}">+1</button>
+                    <button type="button " class="btn btn-danger point-minus" id = "minus-${this.id}">-1</button>
                 </div>
             </div>
         </div>

@@ -63,7 +63,5 @@ function getShowTime() {
   timerDisplay.innerHTML = hours + ':' + minutes + ':' + seconds //+ ':' + milliseconds;
 }
 
-
-window.onload = startTimer
 resetTimerButton.addEventListener("click", resetTimer)
 

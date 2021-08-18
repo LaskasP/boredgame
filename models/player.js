@@ -1,12 +1,17 @@
 class player {
-    constructor(name = 'Unknown', color) {
+    constructor(id, name = 'Unknown', color = "default") {
         this.name = name;
         this.color = color;
+        this.id = id
     }
-    get Name() {
+    getName() {
         return this.name;
     }
-    get color() {
+    getColor() {
         return this.color;
     }
+    getId() {
+        return this.id;
+    }
 }
+

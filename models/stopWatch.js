@@ -66,3 +66,4 @@ function getShowTime() {
 
 window.onload = startTimer
 resetTimerButton.addEventListener("click", resetTimer)
+

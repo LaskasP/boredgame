@@ -3,8 +3,8 @@ body {
     min-width: 310px;
 }
 #title {
-    font-family: 'STIX Two Text', serif;
-    font-weight: 400;
+    font-family: 'STIX Two Text', sans-serif;
+    font-weight: 500;
 }
 .container-md {
     min-width: 280px;
@@ -39,6 +39,7 @@ body {
     box-shadow: 0 6px 14px 0 #666;
     transform: scale(1.05);
 }
+.add-player-button { -webkit-appearance: none; }
 .col-player, .col-add-player {
     min-height:360px;
     min-width: 280px;
